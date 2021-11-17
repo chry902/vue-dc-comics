@@ -44,18 +44,41 @@
         </div>
       </section>
       <!-- second's nav -->
-      <section class="sec_nav">
-        <div>
-          <img src="./assets/buy-comics-digital-comics.png" alt="" />
-          <img src="./assets/buy-comics-merchandise.png" alt="" />
-          <img src="./assets/buy-comics-subscriptions.png" alt="" />
-          <img src="./assets/buy-comics-shop-locator.png" alt="" />
-          <img src="./assets/buy-dc-power-visa.svg" alt="" />
+      <section class="sec_nav d-flex align-center justify-content-center">
+        <div class="">
+          <div>
+            <img src="./assets/buy-comics-digital-comics.png" alt="" />
+            <h6 class="">DIGITAL COMICS</h6>
+          </div>
+          <div>
+            <img src="./assets/buy-comics-merchandise.png" alt="" />
+            <h6 class="">DC MERCHANDISE</h6>
+          </div>
+          <div>
+            <img src="./assets/buy-comics-shop-locator.png" alt="" />
+            <h6 class="">SUBSCRIPTIONS</h6>
+          </div>
+          <div>
+            <img src="./assets/buy-comics-subscriptions.png" alt="" />
+            <h6 class="">COMIC SHOP LOCATOR</h6>
+          </div>
+          <div>
+            <img class="pay" src="./assets/buy-dc-power-visa.svg" alt="" />
+            <h6 class="">DC POWER VISA</h6>
+          </div>
         </div>
       </section>
     </main>
 
-    <footer></footer>
+    <footer class="">
+      <img src="./assets/footer-bg.jpg" alt="" />
+      <div class="d-flex">
+        <div class="footer_list col-6"></div>
+        <div class="dc_image col-6">
+          <img src="./assets/dc-logo-bg.png" alt="" />
+        </div>
+      </div>
+    </footer>
   </div>
 </template>
 
@@ -71,12 +94,18 @@ export default {
 </script>
 
 <style lang="scss">
+@import "style.scss";
+$backg_card: rgba(28, 28, 28, 1);
+$backg_second_nav: rgba(2, 130, 249, 1);
+$backg_footer_botton: rgba(48, 48, 48, 1);
+$backg_buttom: rgba(2, 130, 249, 1);
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 #app {
-  * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
   width: 100vw;
   header {
     padding: 1rem 0;
@@ -103,10 +132,8 @@ export default {
       width: 100%;
       height: 250px;
       img {
-        background-position: center;
-        background-repeat: no-repeat;
+        object-fit: cover;
         width: 100%;
-        height: 100%;
       }
     }
     .card {
@@ -123,33 +150,44 @@ export default {
         justify-content: center;
 
         button {
-          width: 153px;
-          height: 50px;
+          width: 200px;
+          height: 40px;
           color: white;
           background-color: rgba(2, 130, 249, 1);
         }
       }
     }
     .sec_nav {
-      width: 100%;
-      height: 100px;
       background-color: rgba(2, 130, 249, 1);
+
       div {
+        width: 100%;
+        background-color: rgba(2, 130, 249, 1);
         display: flex;
         justify-content: center;
         align-items: center;
+        color: white;
+        h6 {
+          font-size: 11px;
+        }
         img {
-          margin: 0 1rem;
-          width: 60px;
-          height: 60px;
+          display: flex;
+          padding: 2rem 0.5rem;
+          width: 40px;
+        }
+        .pay {
+          width: 43px;
         }
       }
     }
   }
-
-  /* $backg_card: rgba(28, 28, 28, 1);
-    $backg_second_nav: rgba(2, 130, 249, 1);
-    $backg_footer_botton: rgba(48, 48, 48, 1);
-    $backg_buttom: rgba(2, 130, 249, 1); */
+  footer {
+    height: 300px;
+    width: 100%;
+    img {
+      object-fit: cover;
+      width: 100%;
+    }
+  }
 }
 </style>
