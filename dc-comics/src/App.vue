@@ -71,9 +71,37 @@
     </main>
 
     <footer class="">
-      <img src="./assets/footer-bg.jpg" alt="" />
       <div class="d-flex">
-        <div class="footer_list col-6"></div>
+        <div class="footer_list col-6 d-flex flex-wrap">
+          <ul>
+            <li>dvwvwvwv</li>
+            <li>dvwvwvwv</li>
+            <li>dvwvwvwv</li>
+            <li>dvwvwvwv</li>
+            <li>dvwvwvwv</li>
+          </ul>
+          <ul>
+            <li>dvwvwvwv</li>
+            <li>dvwvwvwv</li>
+            <li>dvwvwvwv</li>
+            <li>dvwvwvwv</li>
+            <li>dvwvwvwv</li>
+          </ul>
+          <ul>
+            <li>dvwvwvwv</li>
+            <li>dvwvwvwv</li>
+            <li>dvwvwvwv</li>
+            <li>dvwvwvwv</li>
+            <li>dvwvwvwv</li>
+          </ul>
+          <ul>
+            <li>dvwvwvwv</li>
+            <li>dvwvwvwv</li>
+            <li>dvwvwvwv</li>
+            <li>dvwvwvwv</li>
+            <li>dvwvwvwv</li>
+          </ul>
+        </div>
         <div class="dc_image col-6">
           <img src="./assets/dc-logo-bg.png" alt="" />
         </div>
@@ -182,11 +210,9 @@ $backg_buttom: rgba(2, 130, 249, 1);
     }
   }
   footer {
-    height: 300px;
+    height: 250px;
     width: 100%;
     img {
-      object-fit: cover;
-      width: 100%;
     }
   }
 }
